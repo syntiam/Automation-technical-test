@@ -15,7 +15,7 @@ Cypress.Commands.add('setPersonnalInformations', (firstName, lastName, country, 
     cy.get('#billing_address_1').clear().type(adress)
         .should('have.value', adress)
     cy.get('#billing_address_2').clear().type(additionalAdress)
-        .should('have.value', 'Appt 26')
+        .should('have.value', additionalAdress)
     cy.get('#billing_postcode').clear().type(postCode)
         .should('have.value', postCode)
     cy.get('#billing_city').clear().type(city)
