@@ -4,7 +4,7 @@ __Feature__: as a customer, I would like to buy an item on the website
 
 __scenarios__: the customer adds a product in the cart
 
-   Given a customer in the homepage
+    Given a customer in the homepage
     
     When he chooses a product with specifying the options
    
