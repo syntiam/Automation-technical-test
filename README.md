@@ -4,28 +4,28 @@ __Feature__: as a customer, I would like to buy an item on the website
 
 __scenarios__: the customer adds a product in the cart
 
-    __Given__ a customer in the homepage
+   Given a customer in the homepage
     
-    __When__ he chooses a product with specifying the options
+    When he chooses a product with specifying the options
    
-    __And__ adds the article to the cart 
+    And adds the article to the cart 
     
-    __Then__ a succes message should be displayed
+    Then a succes message should be displayed
    
-    __And__ the article should be added to the cart
+    And the article should be added to the cart
     
 
 __Scenario__: the customer proceeds to checkout
 
-    __Given__ a customer in the checkout step
+    Given a customer in the checkout step
     
-    __When__ he fills valid informations
+    When he fills valid informations
     
-    __And__ he places order
+    And he places order
     
-    __Then__ a succes message should be displayed 
+    Then a succes message should be displayed 
     
-    __And__ the purchase order should be detailed
+    And the purchase order should be detailed
     
 
 __Framework__: Tests are coded in javaScript programming langage with the Cypress framework vrsion 6.9.1
