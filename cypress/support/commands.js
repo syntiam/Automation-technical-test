@@ -1,6 +1,5 @@
 Cypress.Commands.add('setArticleChoice', (article, color, size) => {
     cy.request('http://shop.demoqa.com/')
-    //cy.contains("pink drop shoulder oversized t shirt").click({ force: true })
     cy.contains(article).click({ force: true })
     cy.get('#pa_color').select(color)
     cy.get('#pa_size').select(size)
