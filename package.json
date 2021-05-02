@@ -1,0 +1,31 @@
+{
+  "name": "automation-technical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:runn": "cypress run",
+    "cy:run": "rimraf mochawesome-report cypress/results mochawesome.json && cypress run",
+    "generateReport": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json && npx marge mochawesome.json",
+    "cy:run:report": "npm run cy:run && npm run generateReport"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syntiam/Automation-technical-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syntiam/Automation-technical-test/issues"
+  },
+  "homepage": "https://github.com/syntiam/Automation-technical-test#readme",
+  "dependencies": {
+    "cypress": "^6.9.1"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

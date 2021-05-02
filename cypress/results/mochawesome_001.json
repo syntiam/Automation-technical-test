@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-02T09:38:40.925Z",
+    "end": "2021-05-02T09:39:01.877Z",
+    "duration": 20952,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d02a2cb-7d87-4c1f-a96a-f3e6abc5f131",
+      "title": "",
+      "fullFile": "cypress\\integration\\test.spec.js",
+      "file": "cypress\\integration\\test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f636931f-2544-4539-b8cc-8bc35912a45d",
+          "title": "Buying an article in demoqa plateform",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "choose an article",
+              "fullTitle": "Buying an article in demoqa plateform choose an article",
+              "timedOut": null,
+              "duration": 18259,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.wait(3000)\n// cy.get(\".second-img\").eq(6).click({force:true})\n//cy.get('[class=\"noo-product-inner noo-product-inner2\"]').eq(0).find('[href=\"http://shop.demoqa.com/product/pink-drop-shoulder-oversized-t-shirt/\"]').first()\n//.click({ force: true })\ncy.contains(\"pink drop shoulder oversized t shirt\").click({\n  force: true\n});\ncy.get('#pa_color').select('Pink').should('have.value', 'pink');\ncy.get('#pa_size').select('38').should('have.value', '38');\ncy.get('[class=\"single_add_to_cart_button button alt\"]').click();\ncy.get('.woocommerce-message').should('contain', '“pink drop shoulder oversized t shirt” has been added to your cart.');\ncy.get('[class=\"button wc-forward\"]').click();\ncy.get('.cart-name-and-total').should('contain', '₹15.00');\ncy.get('[class=\"checkout-button button alt wc-forward\"]').click();\ncy.get('#billing_first_name').type('Jane').should('have.value', 'Jane');\ncy.get('#billing_last_name').type('Bie').should('have.value', 'Bie');\ncy.get('#select2-billing_country-container').click().type('France' + '{enter}');\ncy.get('#billing_address_1').clear().type('150 avanue des roses').should('have.value', '150 avanue des roses');\ncy.get('#billing_address_2').clear().type('Appt 26').should('have.value', 'Appt 26');\ncy.get('#billing_postcode').clear().type('26000').should('have.value', '26000');\ncy.get('#billing_city').clear().type('Valence').should('have.value', 'Valence');\ncy.get('#billing_phone').clear().type('0666789034').should('have.value', '0666789034');\ncy.get('#billing_email').clear().type('janefoo@hotmail.com').should('have.value', 'janefoo@hotmail.com');\ncy.get('#terms').check();\ncy.get('#place_order').click();\ncy.get('.woocommerce-thankyou-order-received').should('contain', 'Thank you. Your order has been received.');",
+              "err": {},
+              "uuid": "8a3b9860-abed-48c2-80b1-f29e4a0f9bad",
+              "parentUUID": "f636931f-2544-4539-b8cc-8bc35912a45d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8a3b9860-abed-48c2-80b1-f29e4a0f9bad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18259,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

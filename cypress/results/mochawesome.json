@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-02T09:38:07.516Z",
+    "end": "2021-05-02T09:38:31.010Z",
+    "duration": 23494,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ed41deda-bd0d-46f1-99db-4ba041574086",
+      "title": "",
+      "fullFile": "cypress\\integration\\scenarii.spec.js",
+      "file": "cypress\\integration\\scenarii.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a146fa8-8856-4218-8966-c058fc55b119",
+          "title": "project scenari",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "research ${research.article}: ${research.color}: ${research.size}",
+              "fullTitle": "project scenari research ${research.article}: ${research.color}: ${research.size}",
+              "timedOut": null,
+              "duration": 19738,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://shop.demoqa.com/');\ncy.setArticleChoice(research.article, research.color, research.size);\ncy.get('[class=\"single_add_to_cart_button button alt\"]').click();\ncy.get('.woocommerce-message').should('contain', '“pink drop shoulder oversized t shirt” has been added to your cart.');\ncy.get('[class=\"button wc-forward\"]').click();\ncy.get('.cart-name-and-total').should('contain', '₹15.00');\ncy.get('[class=\"checkout-button button alt wc-forward\"]').click();\ncy.setPersonnalInformations(research.firstName, research.lastName, research.country, research.adress, research.additionalAdress, research.postCode, research.city, research.phone, research.email);\ncy.get('#terms').check();\ncy.get('#place_order').click();\ncy.get('.woocommerce-thankyou-order-received').should('contain', 'Thank you. Your order has been received.');",
+              "err": {},
+              "uuid": "deb1a4d7-b6dd-4dc9-9dc8-038c7c01b92e",
+              "parentUUID": "9a146fa8-8856-4218-8966-c058fc55b119",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "deb1a4d7-b6dd-4dc9-9dc8-038c7c01b92e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19738,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
