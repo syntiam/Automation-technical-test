@@ -15,7 +15,7 @@ Scenario: the customer proceeds to checkout
     Then a succes message should be displayed 
     And the purchase order should be detailed
 
-Framework: Tests are coded in javaScript programming langage with the Cypress framework vrsion 6.9.1
+__Framework__: Tests are coded in javaScript programming langage with the Cypress framework vrsion 6.9.1
 
 How to test:
 git clone https://github.com/syntiam/Automation-technical-test.git
