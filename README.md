@@ -27,9 +27,9 @@ npm install cypress --save-dev
 
 but, if you already have Cypress then you can just do:
 
-npm install 
+*npm install 
 
-npx cypress open
+*npx cypress open
 
 In the Cypress Test Runner choose the test to execute 
 The 'test.spec.js' has been conceived with cypress commands
