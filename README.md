@@ -39,5 +39,6 @@ To generate a Mochawesome report, install the mochawsome dependencies:
 npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
 just run this command: "cy:run:report"
 it will delete the old report and generate a new one.
+![myimage-alt-tag](https://user-images.githubusercontent.com/78595629/116811763-485ec780-ab4b-11eb-9f5e-46be9f60aa3b.png)
 
 Have a good one!!!
