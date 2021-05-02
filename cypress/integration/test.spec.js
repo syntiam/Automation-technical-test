@@ -2,16 +2,11 @@
 describe('Buying an article in demoqa plateform', () => {
     beforeEach(() => {
         cy.visit('http://shop.demoqa.com/')
-        
+
     })
 
     it('choose an article', () => {
-        //cy.wait(3000)
-        // cy.get(".second-img").eq(6).click({force:true})
-        //cy.get('[class="noo-product-inner noo-product-inner2"]').eq(0).find('[href="http://shop.demoqa.com/product/pink-drop-shoulder-oversized-t-shirt/"]').first()
-            //.click({ force: true })
         cy.contains("pink drop shoulder oversized t shirt").click({ force: true })
-
         cy.get('#pa_color').select('Pink')
             .should('have.value', 'pink')
         cy.get('#pa_size').select('38')
