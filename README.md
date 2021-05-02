@@ -19,13 +19,10 @@ __Scenario__: the customer proceeds to checkout
 
     __Given__ a customer in the checkout step
     
-
     __When__ he fills valid informations
     
-
     __And__ he places order
     
-
     __Then__ a succes message should be displayed 
     
     __And__ the purchase order should be detailed
@@ -41,17 +38,12 @@ git clone https://github.com/syntiam/Automation-technical-test.git
 
 cd Automation-technical-test
 
-
 if you do not have Cypress already installed on your machine, then:
-
 
 npm install cypress --save-dev
 
-
-
 but, if you already have Cypress then you can just do:
 
--
 * npm install 
 
 * npx cypress open
@@ -66,7 +58,6 @@ To generate a Mochawesome report, install the mochawsome dependencies:
 
 --------------------------------------------------------------------------------------------
 npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
-
 
 just run this command: "cy:run:report"
 
